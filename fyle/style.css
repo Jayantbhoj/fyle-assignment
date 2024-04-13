@@ -1,0 +1,329 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.ans{
+    width: 550px; 
+    height: 380px;
+    border: 1px solid rgb(171, 168, 168); 
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    visibility: hidden;
+}
+.ans p{
+    font-size: medium;
+    padding: 1px;
+}
+.ans div{
+    padding: 1px;
+}
+.ans button{
+    width: 60px;
+    border-radius: 3px;
+}
+.ans span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(80, 80, 80);
+    font-size: small;
+    padding: 1px;
+}
+.box {
+    width: 450px; 
+    height: 480px;
+    border: 1px solid rgb(171, 168, 168); 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box input{
+    padding-left: 10px;
+}
+label{
+    margin-left: 15px;
+}
+input {
+    width: 90%;
+    padding: 5px;
+    border: 0px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+
+
+}
+input::placeholder {
+    color: #999; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:focus,
+select:focus {
+    outline: none; 
+    border-color: #ccc; 
+    background-color: transparent; 
+;
+}
+
+button{
+    width: 90%;
+    margin-top: 40px;
+    margin-left: 15px;
+    height: 30px;
+    color: white;
+    background-color: rgb(113, 69, 235);
+    border: transparent;
+    cursor: pointer;
+
+}
+
+select {
+    width: 90%;
+    padding: 5px;
+    border: 0px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.tooltip {
+    width: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .groosIncomeText {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltip:hover .groosIncomeText {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .extraIncome {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltip:hover .extraIncome {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .ageTooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltip:hover .ageTooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip .deduction {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltip:hover .deduction {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container {
+    width: 90%;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    margin-bottom:10px;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.income-error{
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+
+}
+.income-error .msg {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.income-error:hover .msg{
+    visibility: visible;
+    opacity: 1;
+}
+
+.extra-income-error{
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+
+}
+.extra-income-error .msg {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.extra-income-error:hover .msg{
+    visibility: visible;
+    opacity: 1;
+}
+
+.deduction-error{
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+
+}
+.deduction-error .msg {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.deduction-error:hover .msg{
+    visibility: visible;
+    opacity: 1;
+}
+
+.age-error{
+    cursor: pointer;
+    position: relative;
+    visibility: hidden;
+
+
+}
+.age-error .msg {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(50, 61, 77);
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.age-error:hover .msg{
+    visibility: visible;
+    opacity: 1;
+}

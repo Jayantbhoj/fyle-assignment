@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e12f85d36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="box">
+
+        
+
+        <label>Enter gross annual income
+            <span class="tooltip">
+                <i class="fa-regular fa-circle-question"></i>
+                <span class="groosIncomeText">Gross annnual income is your total salary in a year before any deductions</span>
+            </span>
+        </label>
+        <div class="container">
+            <input type="text" name="" id="income" placeholder="Enter gross annual income"  >
+            <span class="income-error">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="msg">Enter numbers only</span>
+            </span>
+            
+        </div>
+
+        <label>Enter extra income 
+            <span class="tooltip">
+                <i class="fa-regular fa-circle-question"></i>
+                <span class="extraIncome">Extra Income</span>
+            </span>
+        </label>
+        <div class="container">
+        <input type="text" name="" id="extra" placeholder="Enter extra income from other sources">
+        <span class="extra-income-error">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span class="msg">Enter numbers only</span>
+        </span>
+        </div>
+        <label>Enter age group 
+            <span class="tooltip">
+                <i class="fa-regular fa-circle-question"></i>
+                <span class="ageTooltip">Select your age group</span>
+            </span>
+        </label>
+        <div class="container">
+        <select name="" id="age">
+            <option value=""></option>
+            <option value="<40">&lt; 40</option>
+            <option value="≥ 40 & < 60">≥ 40 & &lt; 60</option>
+            <option value="≥ 60">≥ 60</option>
+        </select>
+        <span class="age-error">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span class="msg">Select age group</span>
+        </span>
+    </div>
+
+        <label>Enter total applicable deductions 
+            <span class="tooltip">
+                <i class="fa-regular fa-circle-question"></i>
+                <span class="deduction">Deductions refers to expenses or amounts that are subtracted from a total for the purpose of reducing taxable income</span>
+            </span>
+        </label>
+        <div class="container">
+        <input type="text" name="" id="deduction" placeholder="Enter total applicable deductions">
+        <span class="deduction-error">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span class="msg">Enter numbers only</span>
+        </span>
+        </div>
+        <button onclick="onClickHandler()">
+            Submit
+        </button>
+
+
+        <div class="ans">
+            <div>Your overall income will be </div>
+            <div id="result"></div>
+            <span>After tax deductions</span>
+            <button onclick="closeHandler()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
