@@ -18,3 +18,9 @@ The following edge cases are taken care of:
 1. Negative entries
 2. White space
 3. Entries with commas
+
+##Clone this repo
+Clone the repository containing the Tax Calculator code to your local machine.
+Navigate to the Project Directory:
+Open the HTML File:
+Open the index.html file in your preferred web browser by double-clicking on it or by right-clicking and selecting "Open with" and then choosing your web browser.
