@@ -19,7 +19,7 @@ The following edge cases are taken care of:
 2. White space
 3. Entries with commas
 
-##Clone this repo
+## Clone this repo
 Clone the repository containing the Tax Calculator code to your local machine.
 Navigate to the Project Directory:
 Open the HTML File:
