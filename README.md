@@ -8,4 +8,7 @@ This project aims to create a website for calculating taxes based on user input.
 4. Error icons are not be visible by default.
 5. Upon submission, a modal should display the final calculated tax values with a close button that resets the form.
 
-
+<img width="1440" alt="Screenshot 2024-04-13 at 5 21 01 PM" src="https://github.com/Jayantbhoj/fyle-assignment/assets/88619677/4f8650a0-926d-489e-a1c8-1dc9220a2556">
+<img width="1440" alt="Screenshot 2024-04-13 at 5 18 51 PM" src="https://github.com/Jayantbhoj/fyle-assignment/assets/88619677/bd894c63-8e32-499c-a22c-ae9c6736a847">
+<img width="1440" alt="Screenshot 2024-04-13 at 5 19 21 PM" src="https://github.com/Jayantbhoj/fyle-assignment/assets/88619677/311d7726-07c8-4027-9429-3aa03ac16e67">
+<img width="1440" alt="Screenshot 2024-04-13 at 5 21 01 PM" src="https://github.com/Jayantbhoj/fyle-assignment/assets/88619677/03c62548-aaa3-472b-968c-3f8ca7f95884">
